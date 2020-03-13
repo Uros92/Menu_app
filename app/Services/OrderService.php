@@ -22,6 +22,8 @@ class OrderService {
     }
 
     /**
+     * Do logic calculation and store order to database
+     *
      *  return void
      */
     public function storeOrder()
@@ -56,6 +58,10 @@ class OrderService {
     }
 
     /**
+     * Method is called via api
+     *
+     * Prepare order and return total USD needed
+     *
      * @param $amount
      *
      * @return float|int
@@ -95,11 +101,13 @@ class OrderService {
     {
         switch ($this->currency->id) {
             case 1:
-                return 7.5;
+                return env('JPY', 7.5);
                 break;
             case 2:
+                return env('GBP', 5);
+                break;
             case 3:
-                return 5;
+                return env('EUR', 5);
                 break;
             default:
                 return 0;

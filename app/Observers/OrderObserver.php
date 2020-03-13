@@ -10,6 +10,10 @@ class OrderObserver
     /**
      * Handle the order "created" event.
      *
+     * Check if discount exist for currency
+     *
+     * Check if currency is GBP and send email
+     *
      * @param  \App\Order  $order
      *
      * @return void

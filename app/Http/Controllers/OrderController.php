@@ -29,12 +29,12 @@ class OrderController extends Controller
      */
     public function store(StoreOrderRequest $request)
     {
-        // if validation fails, return back with errors
+        // If validation fails, return back with errors
         if (isset($request->validator) && $request->validator->fails()) {
             return back()->withErrors($request->validator->messages());
         }
 
-        // save order to database
+        // If everything is ok then store order to database
         (new OrderService())->setCurrency($this->currency)->storeOrder();
 
         return back()->with('status', 'Order created!');

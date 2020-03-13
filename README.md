@@ -1,4 +1,5 @@
-# Service for purchase currencies
+# About application
+- Service for purchase currencies (EUR,GBP,JPY) with USD
 
 ## Technologies
 
@@ -7,16 +8,16 @@
 
 ### Installation:
 
-- git pull https://github.com/Uros92/Menu_app.git
-- make copy of file from root project .env.example and rename it to .env
-- composer install
-- start xamp or wamp server
-- open localhost/phpmyadmin and create database "menu_app"
-- open terminal in root project and call next command "php artisan migrate --seed"
-- then next command "php artisan serve"
+- Git pull https://github.com/Uros92/Menu_app.git
+- Make copy of file from root project .env.example and rename it to **.env** and paste to root of project
+- Composer install
+- Start xampp or wamp server
+- Open localhost/phpmyadmin and create database **menu_app**
+- Open terminal in root project and call next command **php artisan migrate --seed**
+- Then next command: **php artisan serve**
 
-#### Update currencies exchange rates via api
-- open terminal in root project and call next command "php artisan schedule:run"
+# Update currencies exchange rates via api
+- Open terminal in root project and call next command: **php artisan schedule:run**
 
 
 ![image description](https://github.com/Uros92/Menu_app/blob/master/app_diagram.png)
