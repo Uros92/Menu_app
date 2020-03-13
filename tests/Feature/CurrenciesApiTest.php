@@ -21,6 +21,6 @@ class CurrenciesApiTest extends TestCase
         $response = $client->get('http://api.currencylayer.com/live?access_key=0eea08dbc3e1b49e52597bcd2d86b61b&currencies=JPY,GBP,EUR');
 
         $this->assertEquals(Response::HTTP_OK, $response->getStatusCode());
-        $this->assertContains('quotes', $response->getBody()->getContents());
+        $this->assertStringContainsString('quotes', $response->getBody()->getContents());
     }
 }
