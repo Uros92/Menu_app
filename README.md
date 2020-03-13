@@ -16,8 +16,12 @@
 - Open terminal in root project and call next command **php artisan migrate --seed**
 - Then next command: **php artisan serve**
 
-# Update currencies exchange rates via api
+### Update currencies exchange rates via api
 - Open terminal in root project and call next command: **php artisan schedule:run**
+
+### Tests
+- Test api http://api.currencylayer.com/ if everything is ok
+- **php artisan test**
 
 
 ![image description](https://github.com/Uros92/Menu_app/blob/master/app_diagram.png)
