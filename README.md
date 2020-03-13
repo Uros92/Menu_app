@@ -19,4 +19,4 @@
 - open terminal in root project and call next command "php artisan schedule:run"
 
 
-![image description] (https://drive.google.com/file/d/1AFRGIcb04WNFjhKEmVZqzzvfUP7tV4_O/view?usp=sharing)
+![image description](https://github.com/Uros92/Menu_app/blob/master/app_diagram.png)
