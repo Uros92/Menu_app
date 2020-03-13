@@ -9,7 +9,7 @@
 ### Installation:
 
 - git clone https://github.com/Uros92/Menu_app.git
-- Make copy of file from root project .env.example and rename it to **.env** and paste to root of project
+- Make copy of file from root project .env.example and rename it to **.env** and paste to root of project: **cp .env.example .env**
 - Composer install
 - Start xampp or wamp server
 - Open localhost/phpmyadmin and create database **menu_app**
