@@ -53,7 +53,7 @@
 
                 <div class="form-group">
                     <label for="amount">Amount</label>
-                    <input type="number" class="form-control" id="amount" name="amount" placeholder="amount" autocomplete="off">
+                    <input  type="text" pattern="\d*" maxlength="7" class="form-control" id="amount" name="amount" placeholder="amount" autocomplete="off">
                 </div>
 
                 <div>

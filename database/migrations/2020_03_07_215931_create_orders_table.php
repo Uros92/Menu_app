@@ -23,7 +23,7 @@ class CreateOrdersTable extends Migration
             $table->integer('surcharge_percentage');
             $table->integer('surcharge_amount');
             $table->integer('foreign_currency_amount');
-            $table->double('paid_in_usd', 7, 4);
+            $table->double('paid_in_usd', 15, 4);
             $table->integer('discount_percentage')->default(0);
             $table->integer('discount_amount')->default(0);
 

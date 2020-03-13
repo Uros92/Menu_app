@@ -140,7 +140,7 @@ class OrderService {
     {
         $realExchangeRate = 1 / $exchange_rate;
 
-        return  $foreign_amount * $realExchangeRate;
+        return  number_format($foreign_amount * $realExchangeRate, 2, '.', '');
     }
 
 }

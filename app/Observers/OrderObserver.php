@@ -3,6 +3,7 @@
 namespace App\Observers;
 
 use App\Currency;
+use App\Http\Controllers\EmailController;
 use App\Order;
 
 class OrderObserver
@@ -27,6 +28,7 @@ class OrderObserver
 
             //GBP: Send an email with order details. This can be a basic text or
             //html email to any configurable email address.
+            EmailController::sendEmail('GBP');
 
         }
 
