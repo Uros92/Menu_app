@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\ExchangeRate\ExchangeRate;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -25,6 +26,11 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+
+        /*
+        * Get exchange rates and update currencies
+        */
+        $schedule->command(ExchangeRate::exchangeRates())->dailyAt('08:00');
     }
 
     /**

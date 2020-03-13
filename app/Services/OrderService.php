@@ -64,6 +64,11 @@ class OrderService {
         ]);
     }
 
+    /**
+     * @param $amount
+     *
+     * @return float|int
+     */
     public function prepareOrder($amount)
     {
         // Amount of order

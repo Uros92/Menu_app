@@ -20,11 +20,12 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 
+/**
+ * return total USD needed to pay
+ */
 Route::get('/calculate_paid_in_usd/', function() {
     // calculate total amount of usd needed to pay for feign currency
     $currency = Currency::findOrFail(request()->currency_id);
 
-
-    $aa = (new OrderService())->setCurrency($currency)->prepareOrder(request()->amount);
-    return $aa;
+    return (new OrderService())->setCurrency($currency)->prepareOrder(request()->amount);
 });
