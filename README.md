@@ -8,7 +8,7 @@
 
 ### Installation:
 
-- Git pull https://github.com/Uros92/Menu_app.git
+- git clone https://github.com/Uros92/Menu_app.git
 - Make copy of file from root project .env.example and rename it to **.env** and paste to root of project
 - Composer install
 - Start xampp or wamp server
