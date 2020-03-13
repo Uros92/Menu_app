@@ -2,21 +2,12 @@
 
 namespace App\Services;
 
-use App\Currency;
 use App\Order;
 
 class OrderService {
 
     public $currency;
 
-    /**
-     * OrderService constructor.
-     * @param $currency
-     */
-    /*public function __construct($currency)
-    {
-        $this->currency = $currency;
-    }*/
 
     /**
      * @param $currency

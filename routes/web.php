@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
+// Store order in database
 Route::post('/order', 'OrderController@store');

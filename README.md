@@ -5,7 +5,7 @@
 - Laravel v.7.0
 - Jquery v.3.4.1
 
-### Instalation:
+### Installation:
 
 - git pull https://github.com/Uros92/Menu_app.git
 - make copy of file from root project .env.example and rename it to .env
@@ -17,3 +17,6 @@
 
 #### Update currencies exchange rates via api
 - open terminal in root project and call next command "php artisan schedule:run"
+
+
+![image description] (https://drive.google.com/file/d/1AFRGIcb04WNFjhKEmVZqzzvfUP7tV4_O/view?usp=sharing)
